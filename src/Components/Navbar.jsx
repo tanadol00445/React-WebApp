@@ -1,6 +1,7 @@
 import React from 'react'
 import reactLogo from '../assets/react.svg'
 import { Link,NavLink } from 'react-router-dom'
+import ProductPage from './../Pages/ProductPage';
 function Navbar() {
   function activeLink({isActive}){
    return isActive
@@ -18,11 +19,20 @@ function Navbar() {
         </div>
         <ul className="hidden md:flex gap-x-6">
           <li>
-            <NavLink to="/" className = {activeLink}>Home</NavLink>
+            <NavLink to="/" className = {activeLink}>
+            Home
+            </NavLink>
             {/* <Link to="/">Home</Link> */}
           </li>
           <li>
-            <NavLink to="/about" className = {activeLink}>About</NavLink>
+            <NavLink to="/about" className = {activeLink}>
+            About
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/products" className = {activeLink}>
+            Products
+            </NavLink>
           </li>
         </ul>
     </header>

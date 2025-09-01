@@ -10,7 +10,6 @@ function HomePage() {
   function delay(){
     return new Promise((resolve) => setTimeout(resolve,300))
   }
-
   const addTask = async (task) => {
     setLoading(true)
     setTodos((preventTodos) => [...preventTodos, task]) //เพิ่มงานใหม่ลงใน array ของ todos และคัดลอกงานเก่าๆ มาไว้ด้วย
@@ -19,7 +18,6 @@ function HomePage() {
     toast.success("Successfully Added Task")
   
   }
-
   const deleteTask = async (id) => {
     setLoading(true)
     setTodos((prevTodos) => prevTodos.filter((_,i)=> i !== id)) // กรองเอางานที่ไม่ตรงกับ id ที่ส่งมาออกจาก array ของ todos
