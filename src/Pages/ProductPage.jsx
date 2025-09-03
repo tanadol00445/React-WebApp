@@ -35,7 +35,7 @@ function ProductPage() {
 
     return (
     <>
-        <div className='flex item-center gap-2 mb-4'>
+        <div className = 'flex item-center gap-2 mb-4 mt-20'>
             <input
                 type="text"
                 placeholder='Search product...'
@@ -43,9 +43,6 @@ function ProductPage() {
                 onChange={handleSearch}
                 className='w-full p-2 border rounded'
             />
-            <button className='bg-blue-400 text-white p-2 rounded flex items-center'>
-            <FaMagnifyingGlass className='mr-2'/>Search
-            </button>
         </div>
 
         {filteredProducts.length > 0 ? (
